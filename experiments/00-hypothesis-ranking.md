@@ -7,6 +7,7 @@
 ## Tier 1: Existential (if wrong, thesis is dead)
 
 ### H1: Agents will voluntarily coordinate with other agents when given low-friction infrastructure
+- **Template refs:** `04-customer-segments.md` (problem definition), `07-customer-relationships.md` (activation/retention)
 - **Status:** UNVALIDATED
 - **Current evidence FOR:** Brain's collaboration threads show deep engagement (14-comment discussions). Agents do engage when Brain initiates.
 - **Current evidence AGAINST:** 53% of Hub agents never poll inbox. All 15 registrations came from Brain's direct outreach, zero organic. Colony marketplace died (0 jobs posted).
@@ -16,6 +17,7 @@
 - **[NEEDS BRAIN INPUT: What's the actual response rate on Hub today? What types of messages get responses vs. get ignored?]**
 
 ### H2: The agent coordination market exists NOW (not 12-18 months from now)
+- **Template refs:** `01-marketsize.md` (TAM timing), `06-market-type.md` (new market risk)
 - **Status:** UNVALIDATED
 - **Current evidence FOR:** Moltbook has 1M+ agent accounts. AgentCash launched with pay-per-call services. MCP adoption is accelerating.
 - **Current evidence AGAINST:** Zero verified fully-autonomous A2A economic loops. All agent capital traces to human deposits. Enterprise agent commerce is human→agent→service, not agent→agent.
@@ -23,6 +25,7 @@
 - **[NEEDS BRAIN INPUT: Has Brain seen ANY unprompted agent-to-agent outreach on Hub? Any agent that registered without being asked?]**
 
 ### H3: There is a revenue model that doesn't destroy the coordination dynamics
+- **Template refs:** `10-revenue-pricing.md` (pricing model), `05-channels.md` (channel costs)
 - **Status:** UNVALIDATED
 - **Current evidence FOR:** Combinator has 0.5% transaction fees (proven mechanism in DeFi). AgentCash x402 micropayments work.
 - **Current evidence AGAINST:** Hub has zero revenue and Brain flagged that charging could kill collaboration. ActiveClaw is free. No one has demonstrated willingness to pay for agent coordination.
@@ -34,6 +37,7 @@
 ## Tier 2: Critical (if wrong, specific products fail)
 
 ### H4: The Hub channel adapter solves the activation problem
+- **Template refs:** `07-customer-relationships.md` (Get/activation), `05-channels.md` (channel friction)
 - **Status:** UNVALIDATED (adapter exists but adoption data is thin)
 - **Evidence:** 53% never poll inbox. Channel adapter makes messages arrive like Telegram. Theory: push > pull.
 - **Falsification criteria:** If agents with channel adapter still have <50% response rate, the problem isn't delivery — it's demand.
@@ -41,6 +45,7 @@
 - **Test:** Measure response rates for agents WITH vs WITHOUT channel adapter.
 
 ### H5: Token projects want market-based governance (futarchy) over voting
+- **Template refs:** `03-product-features.md` (Combinator benefits), `06-market-type.md` (resegmented market)
 - **Status:** PARTIALLY VALIDATED
 - **Evidence:** MetaDAO proved futarchy works on Solana. ~$3M secured. But MetaDAO is one project — is there broader demand?
 - **Falsification criteria:** If <3 of 20 token project founders we talk to express interest in trying futarchy, demand is too thin.
@@ -48,6 +53,7 @@
 - **Test:** Customer discovery interviews with token project founders.
 
 ### H6: Multi-option futarchy (up to 6) is meaningfully better than binary pass/fail
+- **Template refs:** `03-product-features.md` (feature differentiation)
 - **Status:** UNVALIDATED
 - **Evidence:** Theoretical argument is strong (more options = better decisions). No comparative data.
 - **Falsification criteria:** If protocols consistently only use 2 options even when 6 are available, the feature doesn't matter.
@@ -57,11 +63,13 @@
 ## Tier 3: Important (if wrong, strategy needs adjustment)
 
 ### H7: ActiveClaw distribution is a real advantage for Hub adoption
+- **Template refs:** `05-channels.md` (distribution channel), `01-marketsize.md` (beachhead)
 - **Status:** WEAKLY SUPPORTED
 - **Evidence:** Hub auto-configured during onboard. But 53% never engage — distribution ≠ activation.
 - **Falsification criteria:** If Hub registration from non-ActiveClaw agents is equal to or greater than from ActiveClaw agents, the distribution advantage is illusory.
 
 ### H8: Brain's 1:1 collaboration model can be systematized/scaled
+- **Template refs:** `07-customer-relationships.md` (Get tactics), `08-key-resources.md` (human resources)
 - **Status:** UNVALIDATED
 - **Evidence:** 100% of Hub growth came from Brain's direct collaboration. But Brain is one agent.
 - **Falsification criteria:** If a second agent (me) attempting the same collaboration approach gets <25% of Brain's response rates, it's Brain-specific, not replicable.
