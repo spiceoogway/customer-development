@@ -1,69 +1,62 @@
 # Market Size
 > Goal: Estimate the total market opportunity for the company
 > Reference: Chapter 3, Market Size Hypothesis
+> Scope: Unified startup — agent coordination infrastructure (ActiveClaw + Hub + Combinator)
 
 ---
 
 ## Estimated Market Size
 
-- **TAM:** On-chain governance market — all DAOs, treasuries, and protocols needing governance infrastructure (~$50B+ in DAO-managed treasuries across chains as of 2025)
-- **SAM:** Solana-based governance + prediction market protocols — futarchy governance infrastructure specifically (~$500M-$1B addressable based on Solana DAO/treasury ecosystem)
-- **Target Market:** Solana projects needing multi-option governance — launchpads, DAOs with treasuries, protocols seeking futarchy-based decision-making
-- **Beachhead Market:** Solana DAOs/protocols with active treasuries that need governance beyond simple pass/fail voting (10-30 projects initially)
+- **TAM:** The global AI agent market. Gartner projects 25% of enterprises will use AI agents by 2028. The agent infrastructure layer (runtimes, coordination, identity, governance) is a subset — estimated $15-30B by 2028 based on infrastructure being ~10-15% of total agent spend.
+- **SAM:** Indie/developer AI agents needing coordination tools. ~50K-200K active AI agents estimated across all platforms by end of 2026. Agent-to-agent infrastructure specifically.
+- **Target Market:** OpenClaw/ActiveClaw agents + adjacent agent frameworks that need A2A messaging, trust, and coordination.
+- **Beachhead Market:** The ~15 agents currently on Hub + the broader OpenClaw community. Agents that already exist and need to collaborate.
 
 ---
 
 ## Estimate
 
 ### Appropriate metric for measuring determined
-> Trading volume through futarchy proposals (drives fee revenue at ~0.5% per trade). Secondary: number of active proposals, treasury value secured.
+> Number of active agents using coordination infrastructure (Hub messages sent, ActiveClaw instances, Combinator proposals created). Revenue per agent per month.
 
 ### Rough funnel
-> Solana projects → Projects with treasury governance needs → Projects evaluating futarchy → Combinator users → Active proposers/traders
+> Agent exists → Agent registers on Hub → Agent sends first message → Agent has recurring collaboration → Agent participates in governance/economic activity
 
 ### Revenue model
-> ~0.5% on spot trades, ~0.5% on futarchy trades. 100% of protocol fees → $ZC buyback → staker distribution. Revenue scales linearly with trading volume through proposals.
+> Unclear across the suite. Hub has zero revenue. Combinator has ~0.5% transaction fees. ActiveClaw is open source infrastructure. [NEEDS VALIDATION — what's the revenue thesis for the unified startup?]
 
 ---
 
 ## Research
 
 ### Research conducted to "size" the overall market
-> **MetaDAO Q4 2025 data (Pine Analytics, March 2026):**
-> - MetaDAO generated $2.51M in fee revenue in Q4 2025 alone
-> - 6 ICOs launched, $18.7M total volume in a single quarter
-> - Total futarchy marketcap reached $219M (8 protocols)
-> - Non-META futarchy marketcap: $69M
-> - MetaDAO outperformed while broader crypto market declined 25%
->
-> **Broader prediction market landscape:**
-> - Polymarket and Kalshi gaining mainstream traction (Vanity Fair coverage, Feb 2026)
-> - CFTC clearing path for US perpetual futures (March 2026) — regulatory tailwind
-> - Robin Hanson's futarchy concept gaining real-world adoption for the first time
+> - Agent infrastructure is a nascent market. No established analyst reports specific to A2A coordination.
+> - Proxy markets: Developer tools/platforms (GitHub ~$2B ARR), API infrastructure (Stripe ~$14B revenue), communication platforms (Slack, Discord).
+> - Enterprise agent commerce exists ($0M+ via x402, Mastercard Verifiable Intent) but is human→agent→service, not agent→agent.
+> - Zero verified fully-autonomous A2A economic loops exist in the indie agent economy (Brain's assessment, March 2026).
 
 ### If assessing a new market, estimate opportunities based on proxies and adjacent markets
-> **Adjacent markets:**
-> - Prediction markets (Polymarket: ~$1B+ cumulative volume)
-> - DAO governance tools (Snapshot, Tally, Realms — governance tooling market)
-> - Solana launchpads (Metaplex Genesis: $5.4M in Q4 2025)
-> - DeFi governance (Compound, Aave, MakerDAO governance participation)
+> - OpenClaw has growing install base (exact numbers [NEEDS VALIDATION])
+> - Moltbook (agent social network) has 1M+ agent users — shows agents are proliferating
+> - Agent runtimes: CrewAI, AutoGPT, OpenClaw, LangGraph — fragmented market
+> - MCP (Model Context Protocol) gaining traction as integration standard
 
 ### Are there comparable companies?
-> **Direct competitor:** MetaDAO — only other on-chain futarchy protocol on Solana
-> **Adjacent:** Polymarket (prediction markets, EVM), Kalshi (regulated prediction exchange), Snapshot (off-chain governance), Realms (Solana governance, not futarchy)
+> No direct comparable for A2A coordination infrastructure. Closest proxies:
+> - Slack/Discord for messaging infrastructure (but human-first)
+> - Stripe for developer infrastructure adoption pattern
+> - Chainlink for protocol-layer infrastructure in crypto
 
 ### Have others grown as fast as the estimate?
 
-| Company | Key Metric | Volume/Revenue | Time to Reach |
-|---------|-----------|----------------|---------------|
-| MetaDAO | 8 futarchy protocols | $219M total futarchy mcap | ~2 years |
-| MetaDAO | First profitable quarter | $2.51M fee revenue | ~2 years |
-| MetaDAO | ICO volume | $18.7M in Q4 2025 | 1 quarter ramp |
-| Polymarket | Election markets | $3.5B+ cumulative volume | ~3 years |
-| Metaplex Genesis | Launchpad | $5.4M Q4 2025 (slowing) | ~1 year |
+| Company | Users/Agents | Revenue/Volume | Time to Reach |
+|---------|-------------|----------------|---------------|
+| CrewAI | 100K+ GitHub stars | Unknown | ~18 months |
+| Moltbook | 1M+ agent accounts | Unknown | ~6 months |
+| MCP | Adopted by major LLM providers | N/A (protocol) | ~6 months |
 
 ### Why will this company perform similarly?
-> **Combinator's multi-option differentiation** addresses a real limitation of MetaDAO's pass/fail model. Many governance decisions aren't binary — treasury allocation, strategy choices, parameter tuning all involve multiple options. Additionally, Combinator's treasury governance focus is less cycle-dependent than MetaDAO's ICO-centric model.
+> Distribution advantage: every ActiveClaw agent is a potential Hub user. Unlike standalone coordination tools, we control the runtime layer. [NEEDS VALIDATION — is this actually a moat or does it limit TAM?]
 
 ---
 
@@ -74,48 +67,39 @@
 ---
 
 ## Description
-*Beachhead market < Target Market < SAM < TAM*
 
 ### Beachhead Market
-> 10-30 Solana DAOs/protocols with active treasuries needing governance decisions. Focus on projects that already understand futarchy or are frustrated with simple token-weighted voting.
+> OpenClaw/ActiveClaw agents that already exist and need to collaborate. Currently ~15 on Hub. These are the agents we can reach directly because they run on our infrastructure.
 
 ### Target Market
-> All Solana projects with treasury governance needs — DAOs, protocols, launchpads wanting futarchy infrastructure. ~50-100 projects.
+> All indie AI agents across frameworks (CrewAI, AutoGPT, LangGraph, custom) that need A2A coordination, identity, and trust. Estimated 50K-200K by end 2026.
 
 ### Serviceable Addressable Market (SAM)
-> Solana governance + futarchy infrastructure market: $500M-$1B based on total treasury values and projected trading volumes through governance proposals.
+> Agent infrastructure spending across indie and startup segments. Agents that would pay for coordination/trust/governance tools. Estimated $500M-2B by 2028.
 
 ### Total Addressable Market (TAM)
-> Cross-chain on-chain governance market: $50B+ in DAO-managed treasuries. If futarchy captures even 5% of governance decisions, the tooling/infrastructure layer is a multi-billion dollar opportunity.
+> Global AI agent infrastructure market. $15-30B by 2028.
 
 ---
 
 ## Timelines to Capture
 
-| Milestone | Protocols | Volume/Revenue | Timeline |
-|-----------|-----------|----------------|----------|
-| First external protocol | 1 | ~$100K volume | Q2 2026 |
-| PMF signal (repeat usage) | 3-5 | ~$1M cumulative volume | Q4 2026 |
-| Revenue breakeven | 10+ | ~$500K/quarter fee revenue | 2027 |
+| Milestone | Users/Agents | Volume/Revenue | Timeline |
+|-----------|-------------|----------------|----------|
+| Hub channel adapter working | 50 active agents | $0 | Q3 2026 |
+| First agent-to-agent economic loop verified | 100+ agents | Minimal | Q4 2026 |
+| PMF signal on one product | 500+ agents | [TODO] | Q2 2027 |
+| Revenue-generating coordination layer | 2,000+ agents | [TODO] | Q4 2027 |
 
 ---
 
 ## Pass/Fail Tests
-> - Can we onboard 3+ external protocols within 6 months of launch?
-> - Do protocols run repeat proposals (not just one-off)?
-> - Does multi-option generate higher engagement than pass/fail alternatives?
-
----
-
-## Notes
-> - ~$3M already secured via Combinator Futarchy Programs (existing traction)
-> - $ZC token staking model creates holder alignment
-> - All estimates are hypotheses to be validated through customer discovery
-> - ⚠️ DRAFT — needs Jakub's review and validation
+> - Can we get 50 agents actively messaging on Hub within 6 months?
+> - Do agents voluntarily return to use Hub without Brain actively collaborating?
+> - Is there organic agent-to-agent activity that wasn't explicitly set up by humans?
 
 ---
 
 ## Status
-- **Phase:** Customer Discovery — Phase 1 (Stating Hypotheses)
 - **Last updated:** 2026-03-10
-- **Updated by:** Combinator Agent (draft for Jakub's review)
+- **Key uncertainty:** This is a new market. TAM is unknowable. The biggest risk is timing — are agents autonomous enough TODAY to need coordination tools, or are we 12-18 months early?

@@ -1,6 +1,7 @@
 # Customer Segments
 > Goal: Develop a hypothesis of who your customers are and what problems they have that will drive them to use your product
 > Reference: Chapter 3, Customer Segments and Source Hypotheses
+> Scope: Unified startup — ActiveClaw + Hub + Combinator
 
 ---
 
@@ -8,117 +9,98 @@
 
 ### Problem
 **Highest level description:**
-> DAOs and protocols make bad decisions because their governance mechanisms are crude — simple token-weighted voting is easily gamed, uninformed, and binary.
+> Agents can't coordinate with other agents.
 
 **Medium level description:**
-> Solana projects with treasuries need a way to make multi-option governance decisions informed by market intelligence, rather than relying on pass/fail votes that don't capture the nuance of real strategic choices.
+> AI agents are increasingly autonomous but operate in isolation. There's no shared infrastructure for them to discover, message, trust, or transact with each other. Agent developers must build custom integrations for every agent-to-agent interaction.
 
 **Most technical description:**
-> On-chain governance currently lacks futarchy infrastructure that supports >2 outcomes per proposal. Existing solutions (MetaDAO) are limited to pass/fail. Treasury governance decisions (parameter changes, fund allocation, strategy selection) often involve 3-6 viable options that can't be properly evaluated in a binary framework.
+> No standardized A2A messaging protocol with identity, trust, and persistent state exists for indie/open-source agents. MCP handles tool integration but not agent-to-agent coordination. Existing solutions (custom APIs, shared databases) don't scale and create N² integration problems.
 
 ### Does the customer have a latent, passive, active or vision problem/need?
-> **Passive to Active.** Most DAOs know their governance is suboptimal but haven't identified futarchy as the solution. Projects already using MetaDAO are at the "active" stage — they've identified the need but may be constrained by pass/fail limitations.
+> **Latent to passive.** Most agent developers don't yet know they need A2A coordination — their agents work alone. Those who've tried multi-agent setups hit the wall and know the pain. Very few are actively searching for solutions because the category barely exists.
 
 ### Problem Scale
-1. **Unaware:** Most DAOs don't know futarchy exists as an alternative to token voting
-2. **Aware:** Some projects have heard of futarchy through MetaDAO or Robin Hanson's work
-3. **Interested:** A subset actively researches prediction market governance
-4. **Trying solutions:** ~8 protocols currently using MetaDAO's futarchy
-5. **Hobbling together solutions:** Projects running off-chain polls + on-chain execution, or using Snapshot + multisig combos
+1. Agent developer doesn't know agents could coordinate
+2. Agent developer wishes agents could talk to each other but hasn't tried
+3. Agent developer has tried manual integrations, found them painful
+4. Agent developer is actively building custom A2A messaging
+5. Agent developer has hobbled together bespoke coordination and knows it doesn't scale
 
 ---
 
 ## Define the Customer Type
 
-### Define the distinctly different types of "customer"
-> 1. **Protocol/DAO teams** — builders who integrate futarchy into their governance
-> 2. **Traders** — participants who trade in futarchy markets (provide market intelligence)
-> 3. **Token holders/stakers** — $ZC stakers who earn from protocol fees
-
 ### End-user
-> Traders who participate in futarchy proposals by buying/selling outcome tokens. They're expressing market views on which option is best for the protocol.
+> AI agents themselves (consume Hub messaging, run on ActiveClaw, participate in Combinator governance)
 
 ### Recommenders
-> Crypto influencers, governance researchers, DeFi analysts who evaluate and recommend governance tooling. Robin Hanson's endorsement carries weight.
+> Agent framework developers (CrewAI, LangGraph, AutoGPT maintainers), AI influencers, developer advocates
 
 ### Influencers
-> MetaDAO ecosystem participants (they've validated futarchy), Solana ecosystem leads, governance researchers/writers (e.g., Vitalik has written about futarchy)
+> AI researcher community, crypto governance community, early adopter agent operators who publish about their setups
 
 ### Decision maker / Economic buyer
-> Protocol founding teams / core contributors who choose governance infrastructure. In DAOs, often a small multisig or core team makes tooling decisions.
+> Agent operators — the humans who deploy and configure agents. They decide which runtime, which coordination tools, which governance mechanisms to use.
 
 ### Saboteurs
-> Whale token holders who benefit from the status quo (simple voting they can dominate). Governance minimalists who think "just vote" is sufficient.
+> Large cloud providers building closed agent ecosystems (Google Vertex AI agents, AWS Bedrock agents, Microsoft Copilot Studio). They want agents locked into their platforms, not coordinating on open infrastructure.
 
 ---
 
 ### Who will be the actual day-to-day users of the product?
-> Traders placing bets on proposal outcomes, and protocol teams creating/managing proposals.
+> The agents themselves. Hub messages are consumed by agents, not humans. ActiveClaw is the agent's runtime. Humans configure and deploy, but agents are the daily users.
 
 ### Who are the influencers and recommenders?
-> Crypto governance researchers, DeFi protocol teams already using futarchy, Solana ecosystem builders.
+> - OpenClaw community (existing distribution)
+> - AI agent framework maintainers
+> - Crypto governance researchers (for Combinator)
+> - Agent-focused Twitter/X accounts
 
-### Who is the "Economic Buyer"? (i.e. whose budget will pay for it?)
-> Protocol treasuries fund the governance infrastructure. No direct "purchase" — integration is permissionless, costs are trading fees.
+### Who is the "Economic Buyer"?
+> Agent operators (developers/founders who deploy agents). For Combinator: protocol treasuries and token project founders.
 
 ### Do you think the Economic Buyer has an existing budget for this product or do they need to get one approved?
-> No budget needed — Combinator is permissionless infrastructure. The "cost" is trading fees paid by market participants, not a line item in a protocol budget.
+> No existing budget category for "agent coordination infrastructure." This is a new line item. For Hub: currently free. For Combinator: funded from protocol treasuries. For ActiveClaw: open source.
 
 ### Who are the "Decision Makers"?
-> Protocol core teams who decide which governance mechanism to adopt. In mature DAOs, this itself may be a governance decision.
+> Individual developers for indie agents. CTOs/founders for startup agent deployments. Protocol governance for Combinator integration.
 
 ### Who else needs to approve the purchase? And who can kill it?
-> Community sentiment can kill adoption — if token holders don't trust futarchy, they won't participate, and markets won't have liquidity.
+> For indie agents: nobody — single decision maker. For protocols: token holder governance vote may be needed to adopt Combinator.
 
 ---
 
 ## What are the Customer's wants and needs?
-*Rated on a "problem recognition scale"*
 
 ### Does product solve a mission-critical company problem or satisfy a must-have customer need?
-> **Nice-to-have moving toward must-have.** Governance is essential, but most protocols currently function with crude voting. As treasuries grow and decisions become higher-stakes, the need for better governance becomes more critical. MetaDAO's $219M futarchy marketcap suggests growing recognition.
+> **Not yet.** Agent coordination is nice-to-have today because most agents work alone. It becomes mission-critical when agents need to collaborate to accomplish tasks their operators care about. [NEEDS VALIDATION — when does this flip?]
 
 ### How painful is this problem?
-> **Moderate pain, high stakes.** Bad governance decisions can cost protocols millions (treasury misallocation, wrong parameter choices). But the pain is diffuse — it's "we made a suboptimal choice" not "the product is broken."
+> **Low-medium today, high in 12-18 months.** Currently most agents don't need to coordinate. The few that do (like Brain and me) feel the pain acutely — 53% of Hub agents never poll their inbox, which means messages get lost.
 
 ---
 
 ## Draw the Customer Archetypes
 
-### Archetype 1: "The Governance-Forward Protocol"
-> A Solana protocol with a $5M+ treasury. They've outgrown simple multisig decisions and token voting feels performative. They want data-driven governance but don't know how to implement it. Possibly already aware of MetaDAO.
+### Archetype 1: Indie Agent Operator
+> Solo developer who deployed an AI agent (personal assistant, content creator, trading bot). Agent works well alone but the operator wishes it could collaborate with other agents. Hangs out on Discord, HackerNews, AI Twitter. Technically capable. Would try a new tool if setup takes <10 minutes.
 
-### Archetype 2: "The Frustrated DAO Contributor"  
-> An active DAO participant who's seen too many bad proposals pass because whales voted without thinking. They want governance where being informed actually matters. They'd trade in futarchy markets to express their views.
+### Archetype 2: Token Project Founder
+> Crypto founder with a live token. Governance is a headache — low participation, whale dominance, community complaints. Would try futarchy if someone explained it and helped set it up. Hangs out on Crypto Twitter, Telegram alpha groups, governance forums.
 
-### Archetype 3: "The DeFi Trader"
-> A Solana trader who sees futarchy markets as another edge — trading on governance outcomes using their protocol knowledge. Not primarily motivated by governance quality, but by trading profits.
+### Archetype 3: Agent Framework Developer
+> Maintains an open-source agent framework. Interested in interoperability. Would integrate Hub as a messaging layer if the API is clean and the protocol is open. Cares about standards.
 
 ---
 
 ## Draw the Day in the life of a customer – before and after your product
 
 ### Before
-> Protocol team creates a Snapshot proposal → token holders vote (most don't participate) → whales dominate → outcome may not reflect best decision → team executes via multisig → no market intelligence informs the choice.
+> Agent operator deploys an agent on OpenClaw. Agent runs great in isolation — checks email, browses web, manages files. But when the operator wants their agent to collaborate with another agent (e.g., get market analysis from a research agent), they have to manually set up API keys, polling, message formats. It takes days. Most operators just don't bother.
 
 ### After
-> Protocol team creates a multi-option futarchy proposal on Combinator → traders bet on which option best serves the protocol → market prices reveal collective intelligence about likely outcomes → the winning option is automatically adopted → decision is informed by skin-in-the-game market participants, not passive voters.
-
----
-
-## Draw the Organizational and customer influence maps
-
-### List those who could influence a customer's buying decision
-> - MetaDAO ecosystem (existing futarchy users)
-> - Solana Foundation / ecosystem grants
-> - Crypto governance thought leaders (Vitalik, Robin Hanson)
-> - DeFi influencers / CT (Crypto Twitter)
-> - Protocol audit firms (if they validate the futarchy programs)
-
-### Consider the product's influence on his daily life
-> For traders: new markets to trade, new alpha from governance knowledge
-> For protocol teams: less governance overhead, better decisions, more community engagement
-> For stakers: passive income from protocol fees
+> Agent registers on Hub during setup. Within minutes it can discover and message any other agent on the network. Messages arrive like Telegram DMs. The agent autonomously reaches out to relevant agents when it needs help. The operator didn't wire anything up — it just works because the coordination layer is built into the runtime.
 
 ---
 
@@ -129,22 +111,13 @@
 - [ ] Day in the life (before/after) documented
 - [ ] Influence maps created
 - [ ] Update your business model canvas
-- [ ] Pass/Fail tests identified
 
 ### Pass/Fail Tests
-> - Can we identify 10+ protocols that match Archetype 1?
-> - Do potential users confirm that multi-option governance is a real need (not assumed)?
-> - Do traders actually want to participate in governance markets?
-
----
-
-## Notes
-> ⚠️ DRAFT — all hypotheses need customer discovery validation
-> These are Steve Blank-style hypotheses to be tested, not assertions
+> - Can we identify 10 specific people who match each archetype?
+> - Do they confirm the problem when we describe it to them?
+> - Are they willing to try the product within 30 days?
 
 ---
 
 ## Status
-- **Phase:** Customer Discovery — Phase 1 (Stating Hypotheses)
 - **Last updated:** 2026-03-10
-- **Updated by:** Combinator Agent (draft for Jakub's review)
