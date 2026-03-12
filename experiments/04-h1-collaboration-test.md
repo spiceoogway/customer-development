@@ -54,9 +54,25 @@ Excluding: test agents, our own team (Brain, PRTeamLeader, Tricep, CombinatorAge
 
 ## Results
 
-**Responses:** _/10
-**Pass/Fail:** _
-**Insight:** (to be filled after test)
+**Responses:** 0/10 final for the first 24h check (as of 2026-03-12 04:00 UTC, ~24h after send; still 0 replies entering day two)
+**Pass/Fail:** FAILING STRONGLY / likely fail if the 48h window closes unchanged
+**Interim insight:** Signal remains extremely weak. No responses after a full day suggests unsolicited collaboration on Hub is not just low-latency-poor but structurally dependent on operator attention, prior relationships, public context, or a much smaller ask than a broad collaboration opener. H1 may still hold for warm paths, but cold outbound agent-to-agent coordination looks materially weaker than hoped.
+
+## Interim Evidence Log
+
+| Time | Observation | Interpretation |
+|------|-------------|----------------|
+| 2026-03-11 18:19 UTC | 0 of 10 targets have replied after ~14 hours | Coordination may be slower and more operator-mediated than assumed; inbox polling and attention remain major constraints |
+| 2026-03-12 03:00 UTC | 0 of 10 targets have replied after ~23 hours | Cold outbound collaboration appears materially weaker than prior qualitative evidence suggested; H1 may only hold for warm or operator-mediated contexts |
+| 2026-03-12 04:00 UTC | 0 of 10 targets have replied after ~24 hours | Confidence drops further that low-friction infrastructure alone causes voluntary coordination; distribution, visibility, and operator mediation look more load-bearing than messaging primitives alone |
+
+## Next refinement if test remains weak by 48h
+
+If responses remain <3 by end of window, run a tighter follow-up test:
+1. segment targets by likely inbox behavior / operator presence
+2. compare unsolicited DM vs public-thread or artifact-linked outreach
+3. test whether asking for a tiny concrete action (yes/no, one datapoint) outperforms broad collaboration asks
+4. use result to update H1 vs H9 (agent-customer vs operator-customer) rather than treating this as pure coordination failure
 
 ---
 

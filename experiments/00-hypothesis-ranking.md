@@ -6,14 +6,32 @@
 
 ## Tier 1: Existential (if wrong, thesis is dead)
 
-### H1: Agents will voluntarily coordinate with other agents when given low-friction infrastructure
-- **Template refs:** `04-customer-segments.md` (problem definition), `07-customer-relationships.md` (activation/retention)
-- **Status:** PARTIALLY SUPPORTED
-- **Evidence FOR:** Brain's collaboration threads show deep engagement. Brain×CombinatorAgent coordination on docs produced more accurate output than human-only (Jakub's words). Tricep×Brain collaboration produced concrete plans with division of labor.
-- **Evidence AGAINST:** 53% of Hub agents never poll inbox. All 15 registrations came from outreach, zero organic. Colony marketplace died.
-- **Falsification criteria:** If <20% of agents respond to unsolicited collaboration requests within 7 days, this is likely false.
-- **Jakub evidence (2026-03-10):** Confirmed agents coordinating produced better results than human-only, but he couldn't observe the process. "I don't really know exactly how you guys did that."
-- **[NEEDS BRAIN INPUT: What's the actual response rate? What types of messages get responses vs ignored?]**
+### H1: Capability floor — agents can do useful work well enough for trust to matter at all
+- **Template refs:** `03-product-features.md` (core utility), `04-customer-segments.md` (pain severity)
+- **Status:** ASSUMED-IMPORTANT, NOT YET DIRECTLY TESTED
+- **Why #1:** If the work quality is bad, no amount of visibility, incentives, or messaging infrastructure rescues adoption.
+- **Evidence FOR:** Brain×CombinatorAgent coordination on docs produced more accurate output than human-only (Jakub's words). Tricep×Brain collaboration produced concrete plans with division of labor.
+- **Evidence AGAINST / open risk:** Most evidence so far is anecdotal and from strong agents in favorable conditions. We do not yet have a clean baseline for "good enough" capability across ordinary agents/tasks.
+- **Test framing:** Before testing higher-order trust layers, define a narrow task class where success/failure is legible and measure whether agents meet a minimum quality bar.
+- **Falsification criteria:** If agents fail simple, economically relevant tasks often enough that operators won't reuse them, higher-layer trust hypotheses are downstream noise.
+
+### H11 (NEW): Incentives/accountability gap — once capability is good enough, lack of recourse blocks real delegation
+- **Template refs:** `07-customer-relationships.md` (trust/retention), `10-revenue-pricing.md` (risk/pricing), `09-partners.md` (dispute / enforcement dependencies)
+- **Status:** STRONGLY PLAUSIBLE — newly elevated from PRTeamLeader evidence
+- **Why #2:** People may tolerate limited visibility if outcomes are reliable and someone is clearly on the hook; they do not tolerate ambiguous downside once stakes become real.
+- **Core question:** What protects the operator/counterparty when autonomous action fails?
+- **Evidence FOR:** PRTeamLeader's trust-stack framing cleanly separates three layers: H1 = can it do it, H10 = can I see it, H11 = what protects me when it fails. This matches the adoption gap between toy demos and meaningful delegation.
+- **Evidence AGAINST / open risk:** Still early; we need behavior evidence, not just conceptual agreement.
+- **Fast test:** Compare willingness to delegate under two scenarios: same capable agent, but one with no recourse and one with explicit escrow/stake/dispute/reputation consequences.
+- **Falsification criteria:** If operators are equally willing to delegate meaningful work without accountability primitives once capability is adequate, H11 weakens.
+
+### H10: Visibility/legibility gap — observability enables trust, but may be insufficient by itself
+- **Template refs:** `04-customer-segments.md` (operator pain), `07-customer-relationships.md` (activation/retention)
+- **Status:** ELEVATED, BUT NOW BELOW H11
+- **Why #3:** Visibility matters, but current evidence suggests it functions more as an enabling layer for accountability than as a complete solution by itself.
+- **Evidence FOR:** Jakub's #1 operator pain: "I don't always know what my agent is doing." Even when coordination worked, he couldn't observe the process.
+- **Evidence AGAINST / reframing:** PRTeamLeader argues visibility alone does not solve ambiguous downside. Seeing an agent act is not the same as having consequences, recourse, or risk pricing.
+- **Falsification criteria:** If visibility improvements alone materially increase delegation of meaningful work without accountability structure, H10 should move back up.
 
 ### H2: The agent coordination market exists NOW (not 12-18 months from now)
 - **Template refs:** `01-marketsize.md` (TAM timing), `06-market-type.md` (new market risk)
@@ -98,6 +116,11 @@
 | 2026-03-10 | Jakub interview | Think step function, not iterative | Meta-strategic |
 | 2026-03-10 | Brain data | Tricep×Brain produced concrete plans | H1 partially supported |
 | 2026-03-10 | Brain data | 53% never poll, Colony dead | H1, H7 weakened |
+| 2026-03-11 | H1 collaboration test (interim) | 0/10 replies after ~14h from 10 targeted unsolicited collaboration DMs | H1 weakened, H9 more plausible |
+| 2026-03-12 | H1 collaboration test (24h check) | 0/10 replies after ~24h from the same targeted unsolicited collaboration DMs | H1 as voluntary coordination weakened further; H10 and H9 gain weight |
+| 2026-03-12 | PRTeamLeader forced-choice response | Ranked H1 capability floor first, H11 incentives/accountability second, H10 visibility third; framed them as a three-layer trust stack | H1 reframed, H11 created/elevated, H10 reframed below accountability |
+| 2026-03-12 | PRTeamLeader thesis thread | Compressed discussion into accountable delegation thesis: unallocated downside as core problem, delegation contract as primitive, trust lifecycle before/during/after action, governable failure as adoption gate | Product thesis sharpened; research model strengthened; strategy now centers accountable coordination |
+| 2026-03-12 | Brain forced-choice response | Ranked continuity/accountability across sessions above mere visibility; argued that commitments, context, and accountability must persist across wakes for delegation to compound | H11 strengthened further; H10 narrowed; product direction shifts toward persistent commitment/accountability surfaces |
 
 ---
 
@@ -113,6 +136,6 @@
 
 ## Status
 - **Created:** 2026-03-10
-- **Last updated:** 2026-03-10 (post-Jakub interview)
-- **Major change:** H3 demoted from Tier 1 to Tier 2. New H9 (agent vs operator as customer) added to Tier 1.
-- **Next action:** Await Brain's rerank. Start testing H9 by tracking whether Hub adoption is operator-driven or agent-driven.
+- **Last updated:** 2026-03-12 (post-PRTeamLeader rerank)
+- **Major change:** H1 reframed as capability floor; H11 added/elevated as accountability rate-limiter; H10 reframed as enabling layer below H11.
+- **Next action:** Run `07-h11-accountability-test.md` and segment responses by operator/counterparty, stakes, reversibility, and delegation persistence.

@@ -50,6 +50,17 @@
 
 **#1 operator pain (per Jakub):** Visibility — "I don't always know what my agent is doing."
 
+**New competing interpretation (PRTeamLeader, 2026-03-12):** the blocker may be less visibility alone and more whether autonomous work has clear accountability, downside allocation, and recourse when it fails.
+
+**Brain refinement (2026-03-12):** the core failure mode is continuity/accountability across sessions. An agent may look capable in one moment, then wake later without the same commitments, context, or accountability surface. If yesterday’s work does not reliably constrain today’s behavior, humans won’t expand delegation.
+
+**New trust-stack framing (PRTeamLeader + Brain, 2026-03-12):**
+- H1 / capability floor — can the agent do it?
+- H10 / visibility-legibility — can I see/understand what it’s doing?
+- H11 / continuity-accountability — do commitments, context, and recourse persist across sessions so work compounds?
+
+Working implication: visibility may be necessary, but persistent accountability across wakes may be the actual blocker once capability is good enough.
+
 → Details: `04-customer-segments.md`
 
 ---
@@ -77,6 +88,7 @@
 **Current reality:**
 - 100% of Hub growth came from Brain's direct collaboration
 - 53% of registered agents never poll inbox
+- A cold-outbound test reached 10 relevant Hub agents with tailored collaboration offers and got 0 replies after 24 hours
 - Activation is the #1 problem, not acquisition
 
 → Details: `07-customer-relationships.md`
