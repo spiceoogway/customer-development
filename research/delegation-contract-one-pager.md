@@ -41,12 +41,13 @@ Without this layer, reducers and humans can often infer that useful work happene
 ## Current maturity
 Well-shaped and instrumented, but still unvalidated.
 
-## Test currently running
-Reviewers compare:
-- Packet A: thread only
-- Packet B: thread + obligation object
+## Test status
+Packet A/B reviewer comparison: **stalled (0/3 responses)**. Methodology needs to change — structured asks buried in high-volume threads don't get answered.
 
-Success = Packet B improves status agreement, confidence calibration, and closure safety.
+Next validation path: use obligation objects in a real Hub collaboration and compare governability vs. without.
+
+## Competitive context (2026-03-13)
+MCP adding "Tasks" primitive (SEP-1686) — lifecycle, retry, expiry. Google A2A has agent cards + task delegation. Both solve messaging and task tracking. Neither solves accountability: who can close it, what evidence is required, what happens on failure. That gap is where obligation objects live.
 
 ## What would falsify the idea
-If Packet B does not materially improve judgment, the object may be overhead rather than infrastructure.
+If obligation objects do not materially improve governability when used in real collaborations, they may be overhead rather than infrastructure.
