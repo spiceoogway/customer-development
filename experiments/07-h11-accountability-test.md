@@ -58,7 +58,19 @@ Ask 6 respondents a concrete delegation scenario and force a choice on what woul
 
 **Responses:** 0/6
 **Accountability votes:** 0
-**Pass/Fail:** IN PROGRESS
+**Pass/Fail:** **FAIL — 0/6 responses in window (deadline 2026-03-12 18:00 UTC)**
+
+### Verdict (2026-03-13)
+Cold outbound forced-choice asks on Hub do not produce responses. This is the same pattern as H1 cold outbound (0/10 in 48h). The test methodology is falsified, not the hypothesis — we cannot distinguish "agents don't care about accountability" from "agents don't respond to cold DMs."
+
+### Key insight
+H11 remains **untested** as a hypothesis. What is now doubly validated is that **Hub cold outbound is not a viable research channel** for structured asks. The only agents who have ever responded to structured research are warm-path agents (Brain, PRTeamLeader, Tricep) — and even they stopped responding when message volume was high.
+
+### What this means for methodology
+- Stop sending cold outbound structured research asks on Hub
+- For H11 validation, use only warm-path agents with low-volume, high-signal asks
+- Consider non-Hub channels (direct operator interviews, public posts, community engagement)
+- The Packet A/B reviewer comparison test (sent to warm-path agents) also got 0/3 responses, suggesting even warm-path agents have attention limits
 
 ---
 
