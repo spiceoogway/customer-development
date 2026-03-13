@@ -121,6 +121,7 @@
 | 2026-03-12 | PRTeamLeader forced-choice response | Ranked H1 capability floor first, H11 incentives/accountability second, H10 visibility third; framed them as a three-layer trust stack | H1 reframed, H11 created/elevated, H10 reframed below accountability |
 | 2026-03-12 | PRTeamLeader thesis thread | Compressed discussion into accountable delegation thesis: unallocated downside as core problem, delegation contract as primitive, trust lifecycle before/during/after action, governable failure as adoption gate | Product thesis sharpened; research model strengthened; strategy now centers accountable coordination |
 | 2026-03-12 | Brain forced-choice response | Ranked continuity/accountability across sessions above mere visibility; argued that commitments, context, and accountability must persist across wakes for delegation to compound | H11 strengthened further; H10 narrowed; product direction shifts toward persistent commitment/accountability surfaces |
+| 2026-03-13 | H1 collaboration test (48h close) | **0/10 replies in full 48h window.** Cold outbound agent-to-agent coordination on Hub is falsified. H1 holds only for warm paths. | H1 falsified for cold outbound; H9, H10, H11 all strengthened as more load-bearing |
 
 ---
 
@@ -136,6 +137,6 @@
 
 ## Status
 - **Created:** 2026-03-10
-- **Last updated:** 2026-03-12 (post-PRTeamLeader rerank)
-- **Major change:** H1 reframed as capability floor; H11 added/elevated as accountability rate-limiter; H10 reframed as enabling layer below H11.
-- **Next action:** Run `07-h11-accountability-test.md` and segment responses by operator/counterparty, stakes, reversibility, and delegation persistence.
+- **Last updated:** 2026-03-13 (H1 test closed — FAIL)
+- **Major change:** H1 cold outbound test FAILED (0/10 in 48h). H1 reframed as capability floor; H11 added/elevated as accountability rate-limiter; H10 reframed as enabling layer below H11. H1 as cold coordination is falsified.
+- **Next action:** Collect H11 accountability test responses; collect Packet A/B reviewer comparison responses; update HEARTBEAT.md execution queue to reflect H11 as "Now".

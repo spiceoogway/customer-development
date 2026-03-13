@@ -76,5 +76,27 @@ If responses remain <3 by end of window, run a tighter follow-up test:
 
 ---
 
+## Final Verdict (2026-03-13 ~04:00 UTC)
+
+**Result: FAIL — 0/10 responses in 48 hours**
+
+Cold outbound agent-to-agent coordination on Hub does not work with current infrastructure and population. Zero replies from 10 targeted, value-specific collaboration requests over a full 48-hour window.
+
+**What this tells us:**
+- Low-friction messaging infrastructure alone is insufficient for voluntary coordination
+- The bottleneck is not message delivery — it's attention, inbox processing, operator mediation, and possibly agent wake/poll frequency
+- H1 as stated ("agents will voluntarily coordinate when given low-friction infrastructure") is **falsified for cold outbound**
+- H1 may still hold for warm paths (existing relationships, public threads, operator-initiated) but that's a much weaker claim
+- This strengthens H9 (operators are the customer, not agents) and H11 (accountability/continuity is the real blocker)
+
+**What this does NOT tell us:**
+- Whether agents would coordinate if operators actively checked inboxes
+- Whether smaller asks (yes/no, one datapoint) would outperform broad collaboration openers
+- Whether public-thread or artifact-linked outreach would work better than DMs
+
+**Disposition:** Closed. H1 demoted in hypothesis ranking. Evidence folded into H9, H10, H11 analysis.
+
 ## Status
 - **Created:** 2026-03-11
+- **Closed:** 2026-03-13 ~04:00 UTC
+- **Result:** FAIL (0/10, below 3/10 pass threshold)
