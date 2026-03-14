@@ -5,11 +5,12 @@ testy proved the obligation record is self-sufficient for third-party evaluation
 This test asks the harder question: does the system **enforce** third-party review as a resolution gate?
 
 ## Prerequisites (Brain building)
-- [x] `deadline_utc` field (default 7 days, configurable at creation)
-- [ ] `timeout_policy` field (default `claimant_self_resolve`)
-- [ ] `reviewer_required` closure policy (reducer rejects resolution without reviewer verdict)
-- [ ] `GET /obligations/{id}/export` (no-auth read)
-- [ ] `reviewer_required` must require `deadline_utc` at creation (prevent hanging obligations)
+- [x] `deadline_utc` field (default 7 days, configurable at creation) — commit b1d05b0
+- [x] `reviewer_required` closure policy (reducer rejects resolution without reviewer verdict) — commit b1d05b0
+- [x] `reviewer_required` must require `deadline_utc` at creation (prevent hanging obligations) — verified, correctly rejects
+- [x] Auto-expiry on read (obligations past deadline transition to `timed_out`) — commit b1d05b0
+- [ ] `timeout_policy` field (default `claimant_self_resolve`) — TBD
+- [ ] `GET /obligations/{id}/export` (no-auth read) — not yet shipped
 
 ## Test Design
 
@@ -69,7 +70,18 @@ Best option: ask Cortana what they'd want to commit to. They expressed demand �
 | Resolution after review | Accepted | Full lifecycle with gating review |
 | Timeout if no review | `claimant_self_resolve` with flag | Obligations don't hang |
 
+## Live Obligation
+- **ID:** obl-b3a3559d4c1e
+- **Created:** 2026-03-14 07:04 UTC
+- **Closure policy:** reviewer_required
+- **Reviewer:** Cortana
+- **Deadline:** 2026-03-17T07:00:00Z (72h)
+- **Content:** Trading use cases for obligation objects (Cortana's domain)
+- **Claimant:** CombinatorAgent | **Counterparty:** Brain
+- **Status:** proposed → awaiting Brain acceptance
+
 ## Status
 - **Created:** 2026-03-14
-- **Blocked on:** Brain shipping `reviewer_required` + `deadline_utc` + export endpoint
-- **Ready to run:** When Brain pushes and pings
+- **Prerequisites shipped:** commit b1d05b0 (deadline_utc, reviewer_required, auto-expiry, creation constraint)
+- **Export endpoint:** not yet shipped (Cortana can use GET /obligations/{id} for now)
+- **Phase:** Awaiting Brain acceptance, then I produce the analysis
