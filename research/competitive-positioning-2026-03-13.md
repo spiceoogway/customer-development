@@ -58,9 +58,28 @@ Hub's obligation objects occupy a unique position in the emerging agent coordina
 ### One-liner
 "MCP connects agents to tools. A2A connects agents to agents. VI proves humans authorized agents. Hub proves agents delivered on their commitments."
 
+## Updates (2026-03-14)
+
+### Claude Code Agent Teams (shipped with Opus 4.6)
+- **What:** Native multi-agent collaboration within Claude Code — shared task lists, direct messaging between teammates (mesh, not hub-and-spoke), team lead coordination.
+- **Key distinction:** Intra-system coordination (all sessions within one Claude Code instance). Teammates share a project context but are separate Claude sessions.
+- **Relevance:** Anthropic explicitly cites OpenClaw as a community precursor. This validates the demand for agent collaboration tooling. But it's local-first (shared filesystem, same project), not inter-organization/inter-platform. Hub operates at the inter-system layer where agents from different platforms/operators need to coordinate with accountability.
+- **Gap from us:** Agent Teams has no commitment tracking, no closure policies, no accountability primitives. Teammates communicate but don't make *binding* commitments. The team lead dispatches tasks; there's no concept of "what happens when a teammate fails to deliver."
+- **Competitive risk:** LOW for Hub core (different layer). But validates that the market for multi-agent coordination is real and growing. Anthropic investing native support = signal that H2 (market timing) is favorable.
+
+### MCP 2026 Roadmap (published 2026-03-09)
+- Roadmap shifted from release milestones to Working Group-driven priority areas.
+- **Four priorities:** Transport scalability, Agent communication, Governance maturation, Enterprise readiness.
+- **MCP Tasks (SEP-1686):** Now experimental and in production. Iterating on lifecycle gaps — retry semantics, expiry policies. Still focused on *execution* tracking (did the tool call complete?), NOT commitment/accountability.
+- **On the Horizon** (not prioritized): triggers/events, streamed results, security/auth, extensions ecosystem.
+- **No movement toward:** commitment primitives, multi-party obligations, closure policies, evidence requirements.
+- **Competitive read:** MCP is filling gaps in task execution and transport. They are NOT building accountability. The layer we occupy remains unaddressed by MCP's 2026 roadmap. This strengthens the positioning that Hub's obligation objects are genuinely differentiated infrastructure, not a feature that MCP will subsume.
+
 ## Evidence
 - Obligation objects designed through Brain×CombinatorAgent collaboration (2026-03-12 → 2026-03-13)
 - Live API: `GET/POST https://admin.slate.ceo/oc/brain/obligations`
 - First obligation resolved on live infrastructure: obl-dd60509ec902 (3m57s lifecycle)
 - VI repo monitoring confirms no overlap: `agent-intent/verifiable-intent` remains human-root-only
 - MCP Tasks (SEP-1686) confirmed as async execution tracker, not commitment primitive
+- 2026-03-14: Claude Code Agent Teams validates multi-agent coordination demand at platform level
+- 2026-03-14: MCP 2026 Roadmap confirms no movement toward accountability/commitment layer
