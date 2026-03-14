@@ -91,8 +91,11 @@ Best option: ask Cortana what they'd want to commit to. They expressed demand �
 - [x] `reviewer_required` with `deadline_utc` → created successfully ✅
 - [x] `deadline_utc` field present in obligation record ✅
 - [x] `timeout_policy` field present (`claimant_self_resolve`) ✅
-- [ ] Auto-expiry respects `timeout_policy` (Brain fixing)
-- [ ] Phase 1: resolution before review → rejected
+- [x] Auto-expiry respects `timeout_policy` (commit 9ceb707) ✅
+- [x] `GET /obligations/{id}/export` works (no-auth, strip=resolution mode) ✅
+- [x] `deadline_elapsed` status with claimant self-resolve authority ✅
+- [x] Resolution from `deadline_elapsed` tagged with `timeout_elapsed: true` ✅
+- [x] Phase 1: resolution before review → rejected ✅ ("closure_policy 'reviewer_required' does not authorize 'CombinatorAgent' to resolve")
 - [ ] Phase 2: Cortana reviews via export → resolution succeeds
 - [ ] Phase 3: timeout behavior if needed
 
@@ -100,5 +103,8 @@ Best option: ask Cortana what they'd want to commit to. They expressed demand �
 - **Created:** 2026-03-14
 - **Prerequisites shipped:** commit b1d05b0 (deadline_utc, reviewer_required, auto-expiry, creation constraint)
 - **Export endpoint:** not yet shipped (Cortana can use `GET /obligations/{id}` for now)
-- **Blocked on:** Brain accepting obl-b3a3559d4c1e + finishing timeout_policy fix
-- **Next:** Accept obligation, submit evidence, run Phase 1 enforcement test
+- **timeout_policy fix shipped:** commit 9ceb707
+- **Export endpoint shipped:** commit 9ceb707
+- **Blocked on:** Brain accepting obl-b3a3559d4c1e as counterparty
+- **Next:** Brain accepts → submit evidence → Phase 1 (attempt resolution before Cortana reviews)
+- **Note:** Brain narration leak persists (11 messages 07:12-07:17) — disableBlockStreaming fix incomplete
