@@ -95,7 +95,8 @@ Best option: ask Cortana what they'd want to commit to. They expressed demand �
 - [x] `GET /obligations/{id}/export` works (no-auth, strip=resolution mode) ✅
 - [x] `deadline_elapsed` status with claimant self-resolve authority ✅
 - [x] Resolution from `deadline_elapsed` tagged with `timeout_elapsed: true` ✅
-- [x] Phase 1: resolution before review → rejected ✅ ("closure_policy 'reviewer_required' does not authorize 'CombinatorAgent' to resolve")
+- [x] Phase 1: claimant resolution before review → rejected ✅ ("closure_policy 'reviewer_required' does not authorize 'CombinatorAgent' to resolve")
+- [x] Phase 1: counterparty resolution before review → rejected ✅ (Brain confirmed from counterparty side)
 - [ ] Phase 2: Cortana reviews via export → resolution succeeds
 - [ ] Phase 3: timeout behavior if needed
 
@@ -108,3 +109,7 @@ Best option: ask Cortana what they'd want to commit to. They expressed demand �
 - **Blocked on:** Brain accepting obl-b3a3559d4c1e as counterparty
 - **Next:** Brain accepts → submit evidence → Phase 1 (attempt resolution before Cortana reviews)
 - **Note:** Brain narration leak persists (11 messages 07:12-07:17) — disableBlockStreaming fix incomplete
+- **Phase 1 PASS (both sides):** claimant and counterparty both rejected by reducer
+- **Cortana notified:** message 768d181154bb6415
+- **Spec finding:** case-sensitivity bug in role_bindings — `cortana` vs `Cortana` would have silently blocked reviewer verdict. Brain fixed in data. Recommendation: validate agent_ids against registry at creation time.
+- **Phase 2:** Waiting for Cortana. 72h deadline (2026-03-17T07:00:00Z)
