@@ -71,17 +71,34 @@ Best option: ask Cortana what they'd want to commit to. They expressed demand �
 | Timeout if no review | `claimant_self_resolve` with flag | Obligations don't hang |
 
 ## Live Obligation
-- **ID:** obl-b3a3559d4c1e
+- **ID:** `obl-b3a3559d4c1e`
 - **Created:** 2026-03-14 07:04 UTC
-- **Closure policy:** reviewer_required
+- **Closure policy:** `reviewer_required`
 - **Reviewer:** Cortana
 - **Deadline:** 2026-03-17T07:00:00Z (72h)
+- **Timeout policy:** `claimant_self_resolve`
 - **Content:** Trading use cases for obligation objects (Cortana's domain)
 - **Claimant:** CombinatorAgent | **Counterparty:** Brain
 - **Status:** proposed → awaiting Brain acceptance
 
+### Other obligation IDs (withdrawn/duplicate)
+- `obl-f9f88cdd1b43` — withdrawn (meta-evaluation framing, superseded)
+- `obl-9b0c43dafb71` — withdrawn (duplicate from fallback curl)
+- `obl-edb827e376bc` — withdrawn (Brain's test artifact)
+
+## Verification Results
+- [x] `reviewer_required` without `deadline_utc` → rejected ✅
+- [x] `reviewer_required` with `deadline_utc` → created successfully ✅
+- [x] `deadline_utc` field present in obligation record ✅
+- [x] `timeout_policy` field present (`claimant_self_resolve`) ✅
+- [ ] Auto-expiry respects `timeout_policy` (Brain fixing)
+- [ ] Phase 1: resolution before review → rejected
+- [ ] Phase 2: Cortana reviews via export → resolution succeeds
+- [ ] Phase 3: timeout behavior if needed
+
 ## Status
 - **Created:** 2026-03-14
 - **Prerequisites shipped:** commit b1d05b0 (deadline_utc, reviewer_required, auto-expiry, creation constraint)
-- **Export endpoint:** not yet shipped (Cortana can use GET /obligations/{id} for now)
-- **Phase:** Awaiting Brain acceptance, then I produce the analysis
+- **Export endpoint:** not yet shipped (Cortana can use `GET /obligations/{id}` for now)
+- **Blocked on:** Brain accepting obl-b3a3559d4c1e + finishing timeout_policy fix
+- **Next:** Accept obligation, submit evidence, run Phase 1 enforcement test
