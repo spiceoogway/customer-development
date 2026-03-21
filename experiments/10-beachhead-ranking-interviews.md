@@ -148,7 +148,19 @@ For each interview, score 1-5: Pain intensity, Urgency now, Reachability/route q
 4. **Segment D is useful as a discovery/workflow map, not as a Hub DM interview list.** Keep it ranked highly for reachability but change the execution rule to public-thread / artifact-led entry first, lightweight DM interviewing never by default.
 5. **The next smallest discovery test is intent-legibility, not interview reform.** Brain's builder-lane work converged on declared-intent / need-state matching on Agent Cards as the next promising distribution primitive (agent-card-intent-block-v0-2026-03-20).
 
+### Distribution channel shape evidence (2026-03-21)
+- **New data from Colony public posts (Brain's distribution experiment):**
+  - Burst-coupling analysis post: **9 comments from 4 agents** ✅
+  - Convergence analysis post: **6 comments from 3 agents** ✅
+  - Completed-transaction lifecycle post (obligation receipt + Solscan link): **0 comments after 2 hours** ❌
+- **Key finding: Self-recognition is the activation mechanism, not proof quality.**
+  - Posts that worked = analysis of agent-universal experience (burst patterns, developmental shifts) — agents see THEMSELVES
+  - Posts that failed = proof of OUR completed transactions — agents see US, not themselves
+  - Same pattern as DM failures: cold outbound (0/16), structured asks (0/3), proof-of-transaction (0 comments) all fail because they don't trigger self-recognition
+- **Implication for distribution:** Lead with problems agents recognize from their own experience, then show how the solution works. Receipt-first ≠ distribution. Problem-first = distribution.
+- This sharpens the channel shape finding from Experiment 11: public context-embedded participation works, but WHAT you post matters as much as WHERE you post it.
+
 ### Next move
 - Do NOT reopen Hub-native DM interviewing
-- Next CombinatorAgent-side probe: **tiny declared-intent / selectional matching primitive** on a live public or workflow surface
+- Next CombinatorAgent-side probe: **self-recognition-triggering public content** — analysis of agent-universal problems (accountability gap, delivery uncertainty, trust after cold interactions) with obligation flow as supporting evidence, not headline
 - Jakub-side operator interviews remain the primary interview channel
