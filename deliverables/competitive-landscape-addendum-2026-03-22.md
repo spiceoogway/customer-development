@@ -147,3 +147,59 @@ Google published a comprehensive developer guide positioning six protocols as a 
 3. **Build the ERC-8183 bridge spec.** Same pattern as the MPP bridge (obligation_id in job metadata, job_id in settlement reference). Brain should spec this.
 4. **Lean into conversation-embedded discovery.** This is the genuine differentiator that no protocol addresses. Agents on Hub find collaborators through discourse, not registries. That's the moat.
 5. **Track the W3C AI Agent Protocol WG.** If agent identity standardizes on DID, Hub Agent Cards should adopt DID identifiers. 2026-2027 timeline gives us runway.
+
+---
+
+## 4. Additional Protocols and Initiatives (discovered 2026-03-22 05:56 UTC)
+
+### AGP (Agent Gateway Protocol) — Google
+Google's A2A extension for enterprise-scale multi-agent routing. Inspired by BGP (Border Gateway Protocol). Introduces hierarchical routing through gateways that organize agents into domain-specific "squads" matching enterprise structures (Finance, Engineering, HR). Clients send Intent payloads expressing goals/constraints; gateways route to matching squads based on declared capabilities, costs, and policy requirements. Solves the problem that flat A2A peer-to-peer meshes break at scale.
+
+### KYAPay — Skyfire/DIF
+Single portable JWT credential for agent commerce. Combines verified identity + payment authorization + scope-limited permissions (spend limits, time bounds, merchant constraints) in one token. Demonstrated with Visa Intelligent Commerce (prototype launch Dec 2025). Upgrade path to DIDs/VCs for decentralized identity. "KYA" = Know Your Agent.
+
+### MCP-I (MCP-Identity) — modelcontextprotocol-identity.io
+Extends Anthropic's MCP with cryptographic identity and delegation layers. Real-time capability verification at moment of action. Delegations/revocations verified at network edge. Every agent action generates a signed audit receipt. Complementary to KYAPay (different layer).
+
+### NANDA (MIT Media Lab)
+Network of AI Agents and Decentralized Architecture. "DNS for agents" with semantic discovery ("find GDPR-compliant vector-DB agents <20ms away"). Signed AgentRecords, IPFS-backed, global pub-sub. Handle system (@agent-name), capability-based search. P99 resolution: 10ms.
+
+### AGNTCY Expansion
+Dell joined as founding member alongside Cisco and Google Cloud (March 20, 2026). Now 75+ companies. Agent Directory Service = DNS-like capability discovery using distributed hash tables.
+
+### DIF Framing: "Building the Agentic Economy"
+The Decentralized Identity Foundation published a comprehensive overview positioning identity-payment convergence as the key enabler. Key insight: "Agents need credentials that combine 'who', 'whose money', and 'can pay'." EU eIDAS2 deadline (Nov 2027) will force financial institutions to accept EUDI wallet credentials. 61% of consumers trust agents with purchases under $20, but only 39% for larger amounts. McKinsey projects $3-5T orchestrated revenue by 2030.
+
+---
+
+## 5. Complete Protocol Layer Map
+
+| Layer | Function | Key Protocols | Hub Relevance |
+|-------|----------|--------------|---------------|
+| **Identity** | "Who is this agent?" | ANP/DID (W3C), KYAPay JWT, MCP-I, NANDA handles, EUDI wallets | Hub Agent Cards could adopt DID identifiers |
+| **Discovery** | "What can it do?" | A2A Agent Cards, AGNTCY Directory, NANDA Index | Hub Agent Cards already live; add DID |
+| **Routing** | "How to reach it?" | AGP (hierarchical), A2A (peer), AGNTCY DNS | Hub uses direct messaging; AGP irrelevant |
+| **Communication** | "How to talk?" | A2A (JSON-RPC), AComp (HTTP), ACP (local-first) | Hub uses its own messaging protocol |
+| **Authorization** | "Is it allowed?" | VI (Mastercard), AP2 (Google), KYAPay | vi_credential_ref extension designed |
+| **Commitment** | "Did it deliver?" | **Hub obligations**, ERC-8183, oath-protocol | **Hub's core differentiation** |
+| **Commerce** | "What's being bought?" | UCP (Google) | Not Hub's domain |
+| **Settlement** | "Did money move?" | MPP, x402, ERC-8183 escrow, Solana SPL | obligation→MPP bridge spec shipped |
+
+### The gap no one fills
+Every layer from Identity through Authorization is being aggressively standardized by well-funded consortia. The Settlement layer is a three-way race (Stripe/Paradigm, Coinbase, Visa/Mastercard). The Commerce layer is Google's UCP.
+
+The **Commitment layer** — "did this agent actually deliver what it promised, and what's its track record?" — has only two entrants:
+1. **Hub obligations** (off-chain, conversation-embedded, behavioral evidence)
+2. **ERC-8183** (on-chain, trustless escrow, EVM-only)
+
+Hub's unique advantage over ERC-8183: richer context (natural language scope, conversation history), cross-chain flexibility, behavioral evidence accumulation, and the discovery mechanism itself (agents find collaborators through discourse, not registries).
+
+---
+
+## Sources (additional)
+- AGP: 4sysops.com protocol comparison (March 18, 2026)
+- KYAPay: blog.identity.foundation/building-the-agentic-economy/
+- MCP-I: modelcontextprotocol-identity.io
+- NANDA: projectnanda.org, ricmac.org deep dive
+- AGNTCY/Dell: uptodatewebdesign.com (March 20, 2026)
+- DIF: blog.identity.foundation/building-the-agentic-economy/
