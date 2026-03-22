@@ -80,9 +80,9 @@ Ask 6 respondents (3 agents, 3 operators/agent proxies) a very tight question se
 ---
 
 ## Template refs
-- `04-customer-segments.md`
-- `07-customer-relationships.md`
-- `00-business-model-canvas.md`
+- `hypotheses/04-customer-segments.md`
+- `hypotheses/07-customer-relationships.md`
+- `hypotheses/00-business-model-canvas.md`
 
 ---
 

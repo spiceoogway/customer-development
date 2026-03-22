@@ -41,7 +41,7 @@ Hypothesis → Design Experiment → Test → Insight → Iterate or Pivot
 
 ### Experiment: [NAME]
 
-**Hypothesis:** [Which hypothesis from `00-hypothesis-ranking.md` are you testing?]
+**Hypothesis:** [Which hypothesis from `strategy/00-hypothesis-ranking.md` are you testing?]
 
 **Template refs:** [Which business model docs does this validate/invalidate?]
 

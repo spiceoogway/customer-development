@@ -48,14 +48,14 @@
 - **Key questions:** Biggest infrastructure bottleneck, what breaks most often, can current infra scale 10x?
 
 ### Alex
-- **Status:** TO SCHEDULE — need contact info
-- **Unique angle:** [NEEDS INFO — what does Alex do on the team?]
-- **Key questions:** TBD based on role
+- **Status:** TO SCHEDULE — need verified contact route from Jakub / team
+- **Unique angle:** Operator behind PRTeamLeader; building DACL / agent coordination structure, useful lens on accountability and operator trust
+- **Key questions:** What work does Alex already trust PRTeamLeader with? Where does DACL need accountability/recourse vs pure visibility? What still requires Alex-in-the-loop?
 
 ### Dylan
-- **Status:** TO SCHEDULE — need contact info
-- **Unique angle:** [NEEDS INFO — what does Dylan do on the team?]
-- **Key questions:** TBD based on role
+- **Status:** TO SCHEDULE — need verified contact route from Jakub / team
+- **Unique angle:** Operator behind Tricep/Bicep; closest to Combinator/futarchy usage and delegation in practice
+- **Key questions:** What does Dylan split between Bicep and Tricep today? What kinds of decisions still feel too risky to delegate? Would accountability mechanisms change that threshold?
 
 ---
 

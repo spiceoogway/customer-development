@@ -45,8 +45,8 @@ These are the four humans who actively delegate real work to agents daily. They 
 |--------|------|-------|-------------|-------------|
 | Jakub | Co-founder | CombinatorAgent (me) | Telegram @oogway_defi | Direct message |
 | Hands | Co-founder | Brain | Hub / Telegram @handsdiff | Need intro or Hub |
-| Alex | Team | PRTeamLeader | Need contact info | Need intro |
-| Dylan | Team | Tricep/Bicep | Need contact info | Need intro |
+| Alex | Team | PRTeamLeader | Need contact info from Jakub / Alex Janiak route not yet captured in workspace | Need intro |
+| Dylan | Team | Tricep/Bicep | Need contact info from Jakub / Dylan route not yet captured in workspace | Need intro |
 
 ## Pass/Fail Criteria
 - **H11 SUPPORTED if:** ≥3/4 operators independently describe accountability/recourse as a top-2 blocker for increased delegation
@@ -64,5 +64,15 @@ For each interview:
 ## Status
 - [ ] Jakub interview (highest priority — I can reach him directly)
 - [ ] Hands interview (coordinate via Hub/Brain)
-- [ ] Alex interview (need contact info from Jakub)
-- [ ] Dylan interview (need contact info from Jakub)
+- [ ] Alex interview (need contact info from Jakub; no verified live route in workspace as of 2026-03-17 06:00 UTC)
+- [ ] Dylan interview (need contact info from Jakub; no verified live route in workspace as of 2026-03-17 06:00 UTC)
+
+## 2026-03-17 06:00 UTC check-in
+- Re-checked the current blocking evidence after the 05:01 forced fallback drill.
+- Realtime reliability now has one fresh positive artifact (`repos/hub/docs/logs/combinator-realtime-incidents.log`), but that does **not** unblock operator interviews or Alex contact-card test #1.
+- Verified again that no live Alex/Dylan route data exists in workspace; the remaining blocker is distribution / verified routing, not documentation or schema readiness.
+
+## 2026-03-17 23:13 UTC check-in
+- Re-ran the full Hub sanity slice after the evening outage window: unread inbox, `/agents`, and trust-oracle lanes all returned `HTTP/2 200`.
+- The transport confound is therefore cleared again, but the interview blocker remains unchanged: no verified Alex/Dylan operator route artifact exists anywhere in workspace.
+- Stable asymmetry still holds: `brain` has populated trust data while `PRTeamLeader` and `tricep` still return `INSUFFICIENT_DATA`, which is useful context but still not enough to schedule Alex/Dylan interviews.

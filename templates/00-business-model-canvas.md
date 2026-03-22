@@ -7,7 +7,7 @@
 ## Market Size
 > *How big is the opportunity?*
 >
-> [TODO — TAM, SAM, beachhead market. Reference: `01-marketsize.md`]
+> [TODO — TAM, SAM, beachhead market. Reference: `hypotheses/01-marketsize.md`]
 
 ---
 
@@ -18,7 +18,7 @@
 > **Benefits:** [TODO]
 > **MVP:** [TODO]
 >
-> Reference: `02-vision.md`, `03-product-features.md`
+> Reference: `hypotheses/02-vision.md`, `hypotheses/03-product-features.md`
 
 ---
 
@@ -29,7 +29,7 @@
 > **Problem:** [TODO]
 > **Archetypes:** [TODO]
 >
-> Reference: `04-customer-segments.md`
+> Reference: `hypotheses/04-customer-segments.md`
 
 ---
 
@@ -38,7 +38,7 @@
 >
 > [TODO — distribution channel, cost, multi-sided market considerations]
 >
-> Reference: `05-channels.md`
+> Reference: `hypotheses/05-channels.md`
 
 ---
 
@@ -49,7 +49,7 @@
 > **Keep:** [TODO]
 > **Grow:** [TODO]
 >
-> Reference: `07-customer-relationships.md`
+> Reference: `hypotheses/07-customer-relationships.md`
 
 ---
 
@@ -60,7 +60,7 @@
 > **Competitive set:** [TODO]
 > **Differentiation:** [TODO]
 >
-> Reference: `06-market-type.md`
+> Reference: `hypotheses/06-market-type.md`
 
 ---
 
@@ -69,7 +69,7 @@
 >
 > [TODO — physical, financial, human, IP]
 >
-> Reference: `08-key-resources.md`
+> Reference: `hypotheses/08-key-resources.md`
 
 ---
 
@@ -78,7 +78,7 @@
 >
 > [TODO — technology, distribution, integration partners]
 >
-> Reference: `09-partners.md`
+> Reference: `hypotheses/09-partners.md`
 
 ---
 
@@ -87,4 +87,4 @@
 >
 > [TODO — pricing model, willingness to pay, unit economics]
 >
-> Reference: `10-revenue-pricing.md`
+> Reference: `hypotheses/10-revenue-pricing.md`

@@ -21,7 +21,7 @@
 
 ### Is your product/service a substitute for something customers already have?
 > **ActiveClaw:** Substitute for other agent runtimes (but differentiated by Hub integration + autonomy features)
-> **Hub:** No substitute exists — agents either don't coordinate or use bespoke integrations
+> **Hub:** Partial substitutes are beginning to appear at narrower layers — agents either don't coordinate, use bespoke integrations, or may use simpler bilateral tools like AgentMeets for temporary exchange.
 > **Combinator:** Substitute for Snapshot voting, token-weighted governance, multisig decisions
 
 ### Is it a replacement?
@@ -33,6 +33,12 @@
 
 ### Is it something totally new?
 > The unified thesis (runtime + coordination + governance as integrated stack) is new. Individual pieces have analogues.
+>
+> 2026-03-20 refinement: AgentMeets is a useful adjacent analog because it suggests the market may split into at least two categories:
+> - lightweight ephemeral coordination primitives
+> - persistent/discoverable/accountability-heavy coordination infrastructure
+>
+> This means Hub may still be a new market, but the narrower problem of "help two agents talk right now" may become an existing or quickly-cloning subcategory.
 
 ---
 
