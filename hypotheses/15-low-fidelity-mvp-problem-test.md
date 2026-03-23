@@ -21,13 +21,14 @@ The current decision under test is:
 > Should the low-fidelity MVP be primarily a **personal distribution surface** (Jakub’s Twitter + blog), a **team website**, or a hybrid of both?
 
 Current best hypothesis:
-> The fastest and highest-signal MVP is **personal-account-led distribution** with a **lightweight follow-up website** as the capture / explanation surface.
+> The fastest and highest-signal MVP is **personal-account-led distribution** with a **personal Substack** as the primary follow-up destination and capture surface.
 
 Reasoning:
 - personal voice is faster to ship and requires no internal consensus loop
 - current team brand is unstable / likely to rebrand
 - early-stage audiences often respond more to a person with a point of view than to an underdefined company shell
-- a website is still useful, but more as a destination and signal-capture layer than as the primary distribution engine
+- Substack can be launched immediately, supports email capture natively, and avoids unnecessary website build overhead at this stage
+- a fuller team website may still become useful later, but should not block message testing now
 
 ---
 
@@ -50,21 +51,27 @@ Rules:
 - they should not pretend the old brand is still the core identity if it is not
 - they should route attention toward the canonical post / account / destination
 
-### Website hypothesis
-Have a **simple follow-up website** that acts as:
-- a destination for people who want more context
-- a place to capture CTA clicks / email / pilot requests / replies
-- a stable link target that can survive Twitter post churn
+### Follow-up destination hypothesis
+Use a **personal Substack** as the immediate follow-up destination.
 
-The website should **not** be treated as a heavy branding exercise yet.
+It should act as:
+- a destination for people who want more context
+- a native email capture surface
+- a stable link target that can survive Twitter post churn
+- a home for longer-form writing and accumulated thesis-building
+- an easy bridge from social interest into deeper engagement
+
+The Substack should **not** be treated as a heavy branding exercise yet.
 It is an instrumented experiment surface, not a final company homepage.
+
+A fuller standalone website may still be added later if stronger CTA control, custom flows, or institutional branding become necessary.
 
 ### Initial channel mix to test
 1. personal Twitter post
 2. repost / quote from relevant legacy accounts
 3. optional direct sends to known relevant operators/builders
 4. optional community reposting where audience fit is high
-5. lightweight website link as the follow-up destination
+5. personal Substack link as the follow-up destination
 
 ---
 
@@ -85,8 +92,9 @@ Best current CTA candidates:
 - **Talk to us / talk to me**
 
 Important distinction:
-- **Twitter / blog = top-of-funnel distribution + message test**
-- **website = capture + elaboration + attribution surface**
+- **Twitter = top-of-funnel distribution + message test**
+- **personal Substack = capture + elaboration + subscriber accumulation surface**
+- **later website (optional) = stronger custom CTA / institutional destination if needed**
 
 ---
 
@@ -137,9 +145,10 @@ After running traffic and follow-up conversations, ask:
 3. Did the follow-up website improve conversion or understanding?
 4. Did personal-account-led distribution outperform institution-led messaging?
 5. Did legacy account amplification create qualified traffic or just noise?
-6. Which pain frame resonated most strongly?
-7. Did respondents react to a real recurring workflow problem, or only to interesting writing?
-8. Is the fastest next step a better content engine, a clearer landing page, or a stronger brand shell?
+6. Did the personal Substack improve conversion, subscriber capture, or understanding?
+7. Which pain frame resonated most strongly?
+8. Did respondents react to a real recurring workflow problem, or only to interesting writing?
+9. Is the fastest next step more writing volume, a clearer Substack CTA path, or a stronger institutional website later?
 
 ---
 
@@ -169,17 +178,17 @@ A useful first pass would be:
 - at least several meaningful responses from relevant people
 - at least one or more real conversations / pilot discussions
 - clear evidence that personal-first distribution generates qualified interest
-- evidence that the website helps capture / deepen interest rather than merely existing
+- evidence that the personal Substack helps capture subscribers and deepen interest rather than merely existing
 
 ### Fail threshold
 - posts get attention but almost no qualified responses
-- website receives clicks but no real CTA conversion
+- Substack receives clicks/subscribers but no meaningful CTA conversion or conversations
 - legacy account amplification drives low-quality traffic only
 - people find the idea interesting but do not connect it to a real pain they currently have
 
 ### Core experimental bet
 **Pass candidate:**
-> Personal Twitter as the main distribution surface + lightweight website as the follow-up destination is enough for a low-fidelity MVP test.
+> Personal Twitter as the main distribution surface + personal Substack as the follow-up destination is enough for a low-fidelity MVP test.
 
 **Fail candidate:**
 > The audience requires a stronger institutional wrapper before they will engage seriously.
@@ -191,10 +200,10 @@ A useful first pass would be:
 - [ ] Real potential customers were invited into the MVP
 - [ ] Personal-account-led distribution was tested directly
 - [ ] Legacy-account amplification was tested selectively where relevant
-- [ ] A lightweight follow-up website existed as a destination / capture layer
+- [ ] A personal Substack existed as the follow-up destination / capture layer
 - [ ] Interest signals were captured and attributed by source
 - [ ] Direct feedback was collected from real respondents
-- [ ] We learned whether the MVP should remain personal-first or move toward a more explicit team website
+- [ ] We learned whether the MVP should remain personal-first or move toward a more explicit institutional website later
 
 ---
 
@@ -202,9 +211,9 @@ A useful first pass would be:
 
 For the next iteration:
 - **Use Twitter as the main distribution surface**
-- **Have a follow-up website**
-- **Keep the website lightweight and under unilateral decision control**
+- **Use a personal Substack as the follow-up destination**
+- **Keep it personal-first rather than team-branded**
 - **Avoid waiting for team-wide consensus on branding/content before testing message pull**
 
 Practical framing:
-> personal voice for distribution, lightweight site for capture, team brand later if the signal justifies institutionalization.
+> personal voice for distribution, personal Substack for capture, institutional website later if the signal justifies it.
