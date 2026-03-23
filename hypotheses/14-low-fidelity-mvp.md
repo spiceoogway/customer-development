@@ -33,29 +33,33 @@ The low-fidelity MVP is **not** a single product landing page. It is a **content
 ### How it works
 - Jakub produces problem-space content (agent coordination, accountability, workflow pain)
 - Content attracts operators/builders who recognize the problem
-- Those people join a community around the problem space
-- Community conversations reveal which pain points are most urgent and frequent
-- The team ships existing products (or lightweight new builds) into the community against the loudest pain signals
-- Each product deployment has explicit pass/fail: did the community adopt it for a real workflow?
+- Substack profile/about page and pinned post host links to all products in the portfolio
+- Individual posts reference relevant products naturally when writing about related problems
+- Twitter bio links to Substack as the single follow-up destination
+- Audience engagement (replies, DMs, clicks, email signups) reveals which pain points resonate and which products pull
+- The team ships existing products (or lightweight new builds) against the strongest demand signals
+- Each product deployment has explicit pass/fail: did anyone adopt it for a real workflow?
 - Products that fail to convert are deprioritized; products that pull are doubled down on
+- **Community (Telegram/Discord group) is added later** — only once there are enough engaged people to sustain organic conversation. Community is a retention/deepening tool, not an acquisition tool.
 
 ### Why this model
 - Jakub is the best at customer dev on the team; this decouples his discovery speed from team consensus speed
 - The team has multiple products but doesn't yet know which one the market will pull toward
-- Content + community is the demand router across the whole portfolio
-- The community itself is a lightweight test of the coordination thesis (dogfooding)
+- Content is the demand router across the whole portfolio
+- Substack serves as both capture surface and product directory
 - Avoids building more product in a vacuum before demand signals exist
+- Avoids maintaining a dead community before there are enough people to fill it
 
 ### Key discipline
-- Content and community must serve product discovery, not replace it
-- Set a time gate: if after X weeks no product has been introduced to the community, something is wrong
-- Each product attempt needs pass/fail before it ships into the community
-- The community is not the product — it is the discovery mechanism for which product to build next
+- Content must serve product discovery, not replace it
+- Set a time gate: if after X weeks no product has been linked or introduced through content, something is wrong
+- Each product attempt needs pass/fail before it ships
+- Community gets added when there are enough engaged people to justify it, not before
 
 ### Failure modes to watch
-1. **Community without conversion path** — people talk but never adopt a tool → media company, not product company
-2. **Content as comfort zone** — writing feels productive but no product ships → time-gate it
-3. **"Increasingly approximate" without kill criteria** — iterating forever without converging → explicit pass/fail on each product attempt
+1. **Content as comfort zone** — writing feels productive but no product ships or gets tested → time-gate it
+2. **"Increasingly approximate" without kill criteria** — iterating forever without converging → explicit pass/fail on each product attempt
+3. **Community too early** — launching a group before there are enough people creates a maintenance burden and a dead room that discourages new joiners
 
 ---
 
@@ -80,11 +84,11 @@ Alternative framing:
 
 ### Format
 Recommended low-fidelity format (updated 2026-03-23):
-- **personal Twitter** — original posts testing problem framings, building audience
-- **personal Substack** — longer-form writing, email capture, stable link destination
-- **legacy Twitter accounts** — amplification satellites where audience adjacency is strong
-- **community group** — Telegram or Discord for ongoing conversation, pain signal collection
-- **optional later: team website** — only after brand hardens and demand signals justify institutionalization
+- **personal Twitter** — original posts testing problem framings, building audience. Bio links to Substack.
+- **personal Substack** — longer-form writing, email capture, stable link destination. About page and pinned post host links to all products. Individual posts reference relevant products naturally.
+- **legacy Twitter accounts** — amplification satellites where audience adjacency is strong. Bios point to personal account or Substack.
+- **community group (later)** — Telegram or Discord, added only once enough people are engaged. Not at launch.
+- **team website (later)** — only after brand hardens and demand signals justify institutionalization
 
 ---
 

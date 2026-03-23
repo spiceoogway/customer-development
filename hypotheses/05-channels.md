@@ -82,21 +82,20 @@
 The concrete near-term channel stack, decided 2026-03-23:
 
 ### Distribution layer (Jakub-owned, no consensus required)
-1. **Jakub's personal Twitter** — primary distribution engine, message testing, audience building
-2. **Personal Substack** — follow-up destination, email capture, longer-form writing, stable link target
-3. **Legacy brand/product Twitter accounts** — amplification satellites, cross-promote when audience is adjacent
+1. **Jakub's personal Twitter** — primary distribution engine, message testing, audience building. Bio links to Substack.
+2. **Personal Substack** — follow-up destination, email capture, longer-form writing, stable link target. About page and pinned post host links to all products. Individual posts reference relevant products naturally.
+3. **Legacy brand/product Twitter accounts** — amplification satellites, cross-promote when audience is adjacent. Bios point to personal account or Substack.
 
-### Community layer
-4. **Community group (Telegram or Discord)** — demand signal concentrator, where operators/builders discuss agent workflow problems, where product attempts get introduced
-
-### Product layer (team-owned, ships against community demand signals)
-5. **Existing product portfolio** (Hub, ActiveClaw, Forge, Innies, Combinator, AgentMeets) — deployed into the community against the loudest validated pain signals
-6. **Future team website** — only built after brand identity hardens and community signal justifies institutionalization
+### Product routing layer
+4. **Existing product portfolio** (Hub, ActiveClaw, Forge, Innies, Combinator, AgentMeets) — linked from Substack, introduced through content when relevant, deployed against validated demand signals
+5. **Community group (later)** — Telegram or Discord, added only once enough engaged people exist to sustain organic conversation. Retention/deepening tool, not acquisition tool.
+6. **Future team website (later)** — only built after brand identity hardens and community signal justifies institutionalization
 
 ### Channel logic
-- Twitter → Substack → Community → Product adoption
-- Content attracts, community concentrates demand, products convert
-- Each product introduction into community has explicit pass/fail
+- Twitter → Substack (product links + email capture) → product adoption
+- Content attracts, Substack captures + routes to products, engagement data reveals which products pull
+- Community gets added when there are enough people to fill it, not at launch
+- Each product introduction through content has explicit pass/fail
 - Legacy accounts route traffic, not identity
 - No team branding consensus required for the distribution layer to start
 

@@ -67,14 +67,15 @@ Working implication: visibility matters, but continuity/accountability looks mor
 ## Channels
 > *How will the product be distributed and sold?*
 
-**Near-term distribution thesis (updated 2026-03-23):** Content + Community → Multi-product routing.
+**Near-term distribution thesis (updated 2026-03-23):** Content → Substack (product links + capture) → Multi-product routing.
 - **Jakub's personal Twitter** = primary distribution engine (message testing, audience building)
-- **Personal Substack** = follow-up destination (email capture, longer-form writing, stable link target)
+- **Personal Substack** = follow-up destination (email capture, longer-form writing, product links on about page + pinned post)
 - **Legacy brand Twitter accounts** = amplification satellites where audience is adjacent
-- **Community group** = demand signal concentrator where operators discuss agent workflow problems
-- **Multi-product portfolio** = deployed against validated demand signals from the community
+- **Multi-product portfolio** = linked from Substack, introduced through content, deployed against validated demand signals
+- **Community group (later)** = added once enough engaged people exist, not at launch
+- **Team website (later)** = after brand hardens
 
-The go-to-market is audience-first, product-second. Content builds the audience, community concentrates demand signals, the team ships products into the community against the loudest pain points. Each product deployment has explicit pass/fail.
+The go-to-market is audience-first, product-second. Content builds the audience, Substack captures and routes to products, engagement signals reveal which products pull. Community and institutional branding come later. Each product deployment has explicit pass/fail.
 
 **Long-term thesis:** the stronger PMF path may still be **agents as the real target customer**, but that market may need to be created rather than merely captured.
 

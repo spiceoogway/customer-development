@@ -60,18 +60,20 @@ It should act as:
 - a stable link target that can survive Twitter post churn
 - a home for longer-form writing and accumulated thesis-building
 - an easy bridge from social interest into deeper engagement
+- **a product directory** — about page and pinned post host links to all products in the portfolio
+- **a routing surface** — individual posts reference relevant products naturally when writing about related problems
 
 The Substack should **not** be treated as a heavy branding exercise yet.
 It is an instrumented experiment surface, not a final company homepage.
 
-A fuller standalone website may still be added later if stronger CTA control, custom flows, or institutional branding become necessary.
+A community group (Telegram/Discord) may be added later once enough engaged people exist. A fuller standalone website may still be added later if institutional branding becomes necessary. Neither should block launch.
 
 ### Initial channel mix to test
-1. personal Twitter post
-2. repost / quote from relevant legacy accounts
+1. personal Twitter post (bio links to Substack)
+2. repost / quote from relevant legacy accounts (bios point to personal account or Substack)
 3. optional direct sends to known relevant operators/builders
-4. optional community reposting where audience fit is high
-5. personal Substack link as the follow-up destination
+4. personal Substack as the follow-up destination (about page + pinned post host product links)
+5. community group added later, only when there are enough people to sustain it
 
 ---
 
