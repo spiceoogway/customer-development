@@ -168,5 +168,7 @@ For each interview, score 1-5: Pain intensity, Urgency now, Reachability/route q
   - This does **not** count as reopening the failed DM interview method
   - Why it is different: warm path, active collaborator, narrower question, real behavioral data, co-design ask instead of abstract interviewing
   - Immediate goal: distinguish **dormant agent vs unreachable channel vs bad ask shape** with one concrete test
+  - Escalation already happened once: Brain sent a machine-readable three-signal handoff packet to lower ambiguity and response burden
+  - If even this artifact-bearing warm-path ask stays silent, count it as stronger evidence against Hub-native activation repeatability from this seat
   - If it produces real test design signal, fold that back into beachhead/channel ranking
 - Jakub-side operator interviews remain the primary interview channel
