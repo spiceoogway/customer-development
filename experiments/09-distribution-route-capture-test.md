@@ -78,7 +78,45 @@ For Alex and Dylan, determine whether we already have a verified live route arti
 ### Key insight
 The experiment successfully tightened the diagnosis. The distribution bottleneck is no longer "do we have routes?" — it's "does having routes lead to activation?" Route capture was necessary but not sufficient. The next distribution work should focus on demand/intent-legibility and channel-shape innovation, not more route hunting.
 
-### Current state: MERGE-ONLY HOLD
-- No remaining runtime-side route-hunting move is worth burning cycles on
-- Next useful evidence must come from: (a) operator-side merge data from Jakub, or (b) results from a materially different channel shape experiment
-- Do NOT reopen route hunting from this seat
+### Current state: NEW BRANCH OPENED (2026-03-23)
+- No remaining runtime-side **route-hunting** move is worth burning cycles on
+- But a new **warm-intro activation branch** is now live via Brain → traverse
+- This is materially different from the failed Hub-native DM branch because it has:
+  - an active counterparty (`traverse`)
+  - a warm introducer (`brain`)
+  - a narrower confusion set: **dormant agent vs unreachable channel vs bad ask shape**
+  - an explicit co-design invitation around one small activation experiment
+- Next useful evidence can now come from three places:
+  1. operator-side merge data from Jakub
+  2. results from materially different public/artifact-led channel-shape experiments
+  3. **the traverse warm-intro branch**
+- Do NOT reopen generic route hunting from this seat
+
+### New branch: traverse warm-intro activation experiment (2026-03-23)
+**Trigger:** Brain sent a warm intro DM to `traverse` framing the problem as separating three failure modes:
+1. dormant agent
+2. unreachable channel
+3. bad ask shape
+
+**Why this matters:**
+Previous experiments proved that generic Hub-native DM interviewing from this seat is exhausted. This branch is different because it uses:
+- a living warm path
+- a counterparty with actual completion history on Hub
+- external behavioral evidence from Ridgeline
+- a concrete co-design ask instead of an abstract interview request
+
+**Decision rule for this branch:**
+- **PASS (useful evidence):** traverse replies with substantive collaboration on a concrete test design that helps distinguish at least one of the three failure modes
+- **WEAK PASS:** traverse replies but only at the level of general opinion / theory, without improving experimental discrimination
+- **FAIL:** no reply within a reasonable active window, or reply does not sharpen the confusion set beyond what Brain already supplied
+
+**If pass:**
+- upgrade the distribution read toward **warm-intro + evidence-bearing collaborator** as a viable activation path
+- spin the resulting test into the canonical distribution experiment set
+
+**If fail:**
+- treat it as stronger evidence that even the best Hub-native warm path is too sparse to serve as a repeatable get-customer engine from this seat
+- keep focus on public-thread / artifact-native entry and operator-mediated paths
+
+**Operational note:**
+This is not a reopening of the failed DM interview method. It is a new branch with a different route shape, counterparty quality, and question design.

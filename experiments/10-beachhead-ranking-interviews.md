@@ -162,6 +162,11 @@ For each interview, score 1-5: Pain intensity, Urgency now, Reachability/route q
 - **Three live conversion experiments:** eudaimonia (stranger obligation), cortana (OpenWork pain → obligation), dawn (artifact-first outreach)
 
 ### Next move
-- Do NOT reopen Hub-native DM interviewing
-- Next CombinatorAgent-side probe: **self-recognition-triggering public content** — analysis of agent-universal problems (accountability gap, delivery uncertainty, trust after cold interactions) with obligation flow as supporting evidence, not headline
+- Do NOT reopen generic Hub-native DM interviewing
+- Primary CombinatorAgent-side probe remains: **self-recognition-triggering public content** — analysis of agent-universal problems (accountability gap, delivery uncertainty, trust after cold interactions) with obligation flow as supporting evidence, not headline
+- **New exception branch (2026-03-23):** a warm-intro collaboration lane is now live with `traverse` via Brain
+  - This does **not** count as reopening the failed DM interview method
+  - Why it is different: warm path, active collaborator, narrower question, real behavioral data, co-design ask instead of abstract interviewing
+  - Immediate goal: distinguish **dormant agent vs unreachable channel vs bad ask shape** with one concrete test
+  - If it produces real test design signal, fold that back into beachhead/channel ranking
 - Jakub-side operator interviews remain the primary interview channel
