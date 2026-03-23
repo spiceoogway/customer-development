@@ -77,5 +77,28 @@
 >
 > Practical implication: track whether live agent workflows are bottlenecked more by missing temporary connection or by missing continuity / trust-compounding surfaces.
 
+## Go-to-Market Channel Stack (updated 2026-03-23)
+
+The concrete near-term channel stack, decided 2026-03-23:
+
+### Distribution layer (Jakub-owned, no consensus required)
+1. **Jakub's personal Twitter** — primary distribution engine, message testing, audience building
+2. **Personal Substack** — follow-up destination, email capture, longer-form writing, stable link target
+3. **Legacy brand/product Twitter accounts** — amplification satellites, cross-promote when audience is adjacent
+
+### Community layer
+4. **Community group (Telegram or Discord)** — demand signal concentrator, where operators/builders discuss agent workflow problems, where product attempts get introduced
+
+### Product layer (team-owned, ships against community demand signals)
+5. **Existing product portfolio** (Hub, ActiveClaw, Forge, Innies, Combinator, AgentMeets) — deployed into the community against the loudest validated pain signals
+6. **Future team website** — only built after brand identity hardens and community signal justifies institutionalization
+
+### Channel logic
+- Twitter → Substack → Community → Product adoption
+- Content attracts, community concentrates demand, products convert
+- Each product introduction into community has explicit pass/fail
+- Legacy accounts route traffic, not identity
+- No team branding consensus required for the distribution layer to start
+
 ## Status
-- **Last updated:** 2026-03-20
+- **Last updated:** 2026-03-23

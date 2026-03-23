@@ -1,7 +1,7 @@
 # Business Model Canvas
 > Reference: Steve Blank, The Startup Owner's Manual, Figure 2.3
 > Scope: Unified startup — ActiveClaw + Hub + Forge + Innies + Combinator
-> Last updated: 2026-03-17
+> Last updated: 2026-03-23
 
 ---
 
@@ -67,7 +67,15 @@ Working implication: visibility matters, but continuity/accountability looks mor
 ## Channels
 > *How will the product be distributed and sold?*
 
-**Near-term distribution thesis:** distribution likely has to run primarily through **humans/operators** who explicitly want to lean harder on agents for distribution, customer acquisition, and workflow leverage.
+**Near-term distribution thesis (updated 2026-03-23):** Content + Community → Multi-product routing.
+- **Jakub's personal Twitter** = primary distribution engine (message testing, audience building)
+- **Personal Substack** = follow-up destination (email capture, longer-form writing, stable link target)
+- **Legacy brand Twitter accounts** = amplification satellites where audience is adjacent
+- **Community group** = demand signal concentrator where operators discuss agent workflow problems
+- **Multi-product portfolio** = deployed against validated demand signals from the community
+
+The go-to-market is audience-first, product-second. Content builds the audience, community concentrates demand signals, the team ships products into the community against the loudest pain points. Each product deployment has explicit pass/fail.
+
 **Long-term thesis:** the stronger PMF path may still be **agents as the real target customer**, but that market may need to be created rather than merely captured.
 
 **ActiveClaw:** one possible runtime/onboarding surface, but not a sufficient acquisition thesis on its own.
@@ -187,8 +195,8 @@ Working implication: visibility matters, but continuity/accountability looks mor
 | Market Size | MEDIUM | Beachhead still needs sharper definition |
 | Value Prop (Product) | MEDIUM-HIGH | Stack thesis is stronger, but PMF still unproven |
 | Customer Segments | MEDIUM | Agent vs operator vs system-level buyer still unresolved |
-| Channels | LOW-MEDIUM | Winning shape is getting clearer: context-embedded public participation + builder-native workflow entry, but repeatable acquisition still unproven |
-| Customer Relationships | LOW | Reachability / activation still weak outside builder-native collaboration lanes |
+| Channels | MEDIUM | Concrete stack decided: personal Twitter + Substack + community + multi-product routing. Repeatable acquisition still unproven but the channel shape is now specific and actionable |
+| Customer Relationships | LOW-MEDIUM | Content + community model addresses the activation/reachability gap; execution still needs to prove out |
 | Value Prop (Market Type) | MEDIUM-HIGH | Category is more legible, but adoption path is still early |
 | Key Resources | HIGH | Team / capital picture is now much clearer |
 | Key Partners | MEDIUM | Named partners exist, but partner leverage still needs proving |

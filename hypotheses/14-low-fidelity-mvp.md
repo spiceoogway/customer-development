@@ -2,7 +2,7 @@
 > Built from `templates/14-low-fidelity-mvp.md`
 > Goal: Develop a low fidelity MVP to test customer interest
 > Scope: Unified startup — human/operator-facing entry point into the long-running agent coordination / accountability / economic stack
-> Last updated: 2026-03-20
+> Last updated: 2026-03-23
 
 ---
 
@@ -18,6 +18,44 @@ This MVP should primarily test whether:
 
 The key shift: this is **not** primarily an agent-native landing page.
 It is a human-facing page for people who manage, build with, or depend on agents.
+
+---
+
+## Go-to-Market Model (updated 2026-03-23)
+
+The low-fidelity MVP is **not** a single product landing page. It is a **content + community + multi-product routing system.**
+
+### Core model
+1. **Content** (Jakub's personal Twitter + personal Substack) = main distribution surface and message-testing engine
+2. **Community** (Telegram or Discord group) = demand signal concentrator where operators discuss agent workflow problems
+3. **Multi-product portfolio** (Hub, ActiveClaw, Forge, Innies, Combinator, AgentMeets) = supply side, ready to deploy against validated demand signals from the community
+
+### How it works
+- Jakub produces problem-space content (agent coordination, accountability, workflow pain)
+- Content attracts operators/builders who recognize the problem
+- Those people join a community around the problem space
+- Community conversations reveal which pain points are most urgent and frequent
+- The team ships existing products (or lightweight new builds) into the community against the loudest pain signals
+- Each product deployment has explicit pass/fail: did the community adopt it for a real workflow?
+- Products that fail to convert are deprioritized; products that pull are doubled down on
+
+### Why this model
+- Jakub is the best at customer dev on the team; this decouples his discovery speed from team consensus speed
+- The team has multiple products but doesn't yet know which one the market will pull toward
+- Content + community is the demand router across the whole portfolio
+- The community itself is a lightweight test of the coordination thesis (dogfooding)
+- Avoids building more product in a vacuum before demand signals exist
+
+### Key discipline
+- Content and community must serve product discovery, not replace it
+- Set a time gate: if after X weeks no product has been introduced to the community, something is wrong
+- Each product attempt needs pass/fail before it ships into the community
+- The community is not the product — it is the discovery mechanism for which product to build next
+
+### Failure modes to watch
+1. **Community without conversion path** — people talk but never adopt a tool → media company, not product company
+2. **Content as comfort zone** — writing feels productive but no product ships → time-gate it
+3. **"Increasingly approximate" without kill criteria** — iterating forever without converging → explicit pass/fail on each product attempt
 
 ---
 
@@ -41,13 +79,12 @@ Alternative framing:
 5. **Contrast against lighter alternatives** — do humans actually want the heavier coordination/accountability layer, or is a lighter temporary connection tool enough for the jobs they care about?
 
 ### Format
-Recommended low-fidelity format:
-- landing page
-- one clear human-facing pain statement
-- short benefits summary in operator language
-- one or two simple diagrams / before-after workflow visuals
-- CTA to talk, request pilot, or describe current agent workflow
-- optional variant pages by audience
+Recommended low-fidelity format (updated 2026-03-23):
+- **personal Twitter** — original posts testing problem framings, building audience
+- **personal Substack** — longer-form writing, email capture, stable link destination
+- **legacy Twitter accounts** — amplification satellites where audience adjacency is strong
+- **community group** — Telegram or Discord for ongoing conversation, pain signal collection
+- **optional later: team website** — only after brand hardens and demand signals justify institutionalization
 
 ---
 
