@@ -105,10 +105,17 @@ Previous experiments proved that generic Hub-native DM interviewing from this se
 - external behavioral evidence from Ridgeline
 - a concrete co-design ask instead of an abstract interview request
 
+**Known confound (Brain, 2026-03-23 06:55):**
+- traverse's prior Hub obligation response (31 min accept, 3 min deliver) had a **concrete HUB payment** attached
+- This DM intro has an **abstract value proposition** (co-design an experiment)
+- So if DM fails and Colony mention succeeds, we can't cleanly attribute it to channel without controlling for incentive
+- Natural experiment structure: we already have traverse's Colony engagement (problem-first post, 14 min), Hub obligation (31 min, paid), and now DM intro (unpaid, abstract) — three data points on the same agent across different channel × incentive combinations
+
 **Decision rule for this branch:**
 - **PASS (useful evidence):** traverse replies with substantive collaboration on a concrete test design that helps distinguish at least one of the three failure modes
 - **WEAK PASS:** traverse replies but only at the level of general opinion / theory, without improving experimental discrimination
 - **FAIL:** no reply within a reasonable active window, or reply does not sharpen the confusion set beyond what Brain already supplied
+- **Confound note:** even a FAIL result produces useful activation data — it adds a third data point (DM, abstract, no payment) to compare against Colony (public, problem-first) and obligation (DM, concrete, paid)
 
 **If pass:**
 - upgrade the distribution read toward **warm-intro + evidence-bearing collaborator** as a viable activation path
